@@ -1,6 +1,5 @@
 -- DailyPlanner Database Script for SQL Server 2019
 -- This script creates all necessary tables and initial data
--- Remove all GO statements to avoid syntax errors in Visual Studio
 
 USE [master]
 
@@ -197,10 +196,5 @@ CREATE NONCLUSTERED INDEX [IX_Reminders_UserId] ON [dbo].[Reminders] ([UserId] A
 CREATE NONCLUSTERED INDEX [IX_Reminders_TaskId] ON [dbo].[Reminders] ([TaskId] ASC)
 CREATE NONCLUSTERED INDEX [IX_Reminders_ReminderTime] ON [dbo].[Reminders] ([ReminderTime] ASC)
 CREATE NONCLUSTERED INDEX [IX_Reminders_IsActive] ON [dbo].[Reminders] ([IsActive] ASC)
-
--- Insert sample data (optional)
--- Uncomment below to insert sample admin user
--- INSERT INTO [dbo].[Users] ([Username], [PasswordHash], [Email], [RoleId], [GenderId]) 
--- VALUES (N'admin', N'5e884898da28047151d0e56f8dc6292773603d0d6aabbdd62a11ef721d1542d8', N'admin@example.com', 1, 1)
 
 PRINT 'DailyPlannerDB database created successfully!'
