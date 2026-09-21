@@ -5,7 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:DailyPlanner.Views"
         mc:Ignorable="d"
-        Title="Вход" Height="400" Width="500" WindowStartupLocation="CenterScreen">
+        Title="Вход" Height="400" Width="500" WindowStartupLocation="CenterScreen"
+        x:Name="LoginWindowRoot">
     <Window.Resources>
         <Color x:Key="PrimaryColor">#D12128</Color>
         <Color x:Key="SecondaryColor">#01344F</Color>

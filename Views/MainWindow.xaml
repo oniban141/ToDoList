@@ -6,7 +6,8 @@
         xmlns:local="clr-namespace:DailyPlanner.Views"
         xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         mc:Ignorable="d"
-        Title="Ежедневник" Height="768" Width="1024" WindowState="Maximized">
+        Title="Ежедневник" Height="768" Width="1024" WindowState="Maximized"
+        x:Name="MainWindowRoot">
     <Window.Resources>
         <Color x:Key="PrimaryColor">#D12128</Color>
         <Color x:Key="SecondaryColor">#01344F</Color>
@@ -369,3 +370,14 @@
         </Grid>
     </Grid>
 </Window>
+
+<!-- Separate DatePicker style definition -->
+<Style x:Key="DarkDatePickerStyle" TargetType="DatePicker">
+    <Setter Property="Background" Value="{StaticResource SecondaryColor}"/>
+    <Setter Property="Foreground" Value="White"/>
+    <Setter Property="BorderBrush" Value="{StaticResource PrimaryBrush}"/>
+    <Setter Property="BorderThickness" Value="1"/>
+    <Setter Property="Margin" Value="5"/>
+    <Setter Property="Padding" Value="5"/>
+    <Setter Property="FontSize" Value="12"/>
+</Style>
